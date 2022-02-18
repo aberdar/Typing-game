@@ -1,0 +1,80 @@
+:root {
+    --white: #f4f4f4;
+    --black: #111111;
+    --yellow: #ffff00;
+    --blue: #0307da8c;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: monospace;
+}
+body {
+    background: var(--bg);
+}
+
+.highlight {
+    background-color: var(--highlightColor);
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+input[type=text] {
+   background-color: var(--bg);
+   color: var(--fontColor);
+   padding: 4px 15px;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --highlightColor: var(--yellow);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --highlightColor: var(--blue);
+}
+
+.btn {
+    background-color: var(--btnBg);
+    border: none;
+    color: var(--btnFontColor);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {opacity: 1}
+
+.btn-theme {
+    background-color: var(--btnBg);
+    border: none;
+    border-radius: 5px;
+    color: var(--btnFontColor);
+    padding: 5px 7px;
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-theme:hover {opacity: 1}
